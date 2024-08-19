@@ -1,3 +1,3 @@
 "use strict";
-const fullName = 'sikanderpreet singh';
-console.log(fullName);
+// require('./01unions/excercise');
+require('./01intersections/excercises');

@@ -4,11 +4,20 @@ function CounterWithState() {
     const [counter, setCounter]= useState(0)
 
     const increaseCounter = () =>{
-        setCounter((prev)=> prev+1)
+        setCounter((prev)=> {
+            if (prev !== 20) return prev+1;
+            return prev;
+
+        }
+    )
 
     }
     const decreaseCounter = () =>{
-        setCounter((prev)=> prev-1)
+        setCounter((prev)=> {
+            if (prev !== 0) return prev-1;
+            return prev;
+        }
+    )
 
     }
     
